@@ -1,4 +1,4 @@
-function caclBalance(A, D) {
+function calcBalance(A, D) {
   let transactions = [];
   let income = 0;
   D.forEach((i, index) => {
