@@ -1,7 +1,6 @@
 /* Reshape the matrix
 https://leetcode.com/explore/challenge/card/july-leetcoding-challenge-2021/608/week-1-july-1st-july-7th/3803/
 */
-// check if its possible to form 2D array of r rows and c columns with provided array
 
 function reshape(mat, r, c) {
   // Count array total length
@@ -14,7 +13,6 @@ function reshape(mat, r, c) {
       totalLength++;
     }
   }
-  // check if r times c === length
   if (r * c === totalLength) {
     // create r arrays of c items
     let newArr = [];
@@ -32,54 +30,4 @@ function reshape(mat, r, c) {
   }
 }
 
-// tests
-console.log(
-  isArrEqual(
-    reshape(
-      [
-        [1, 2, 3],
-        [4, 5, 6],
-      ],
-      2,
-      2
-    ),
-    [
-      [1, 2, 3],
-      [4, 5, 6],
-    ]
-  )
-);
-console.log(
-  isArrEqual(
-    reshape(
-      [
-        [1, 2, 3],
-        [4, 5, 6],
-      ],
-      3,
-      2
-    ),
-    [
-      [1, 2],
-      [3, 4],
-      [5, 6],
-    ]
-  )
-);
-console.log(
-  isArrEqual(
-    reshape(
-      [
-        [1, 2],
-        [3, 4],
-      ],
-      1,
-      4
-    ),
-    [[1, 2, 3, 4]]
-  )
-);
-
-function isArrEqual(a, b) {
-  return JSON.stringify(a) === JSON.stringify(b);
-}
+module.exports = reshape;
