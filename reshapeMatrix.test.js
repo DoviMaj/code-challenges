@@ -1,6 +1,6 @@
 const reshape = require("./reshapeMatrix");
 
-test("Reshape case 1", () => {
+test("Case 1", () => {
   expect(
     reshape(
       [
@@ -13,7 +13,7 @@ test("Reshape case 1", () => {
   ).toStrictEqual([[1, 2, 3, 4]]);
 });
 
-test("Reshape case 2", () => {
+test("Case 2", () => {
   expect(
     reshape(
       [
@@ -29,7 +29,7 @@ test("Reshape case 2", () => {
   ]);
 });
 
-test("Reshape case 3", () => {
+test("Case 3", () => {
   expect(
     reshape(
       [
