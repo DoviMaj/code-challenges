@@ -10,4 +10,4 @@ function prefixSums(A, B, K) {
   return amount;
 }
 
-// console.log(prefixSums(6, 11, 2));
+console.log(prefixSums(6, 11, 2));

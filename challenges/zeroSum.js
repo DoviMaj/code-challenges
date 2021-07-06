@@ -5,7 +5,6 @@ function sumZero(arr) {
   let right = arr.length - 1;
   if (arr[left] > 0) return undefined;
   while (right > left) {
-    console.log(arr[left], arr[right]);
     const sum = arr[left] + arr[right];
     if (sum === 0) {
       return [arr[left], arr[right]];
@@ -18,4 +17,4 @@ function sumZero(arr) {
   return undefined;
 }
 
-// console.log(sumZero([1, 2, 4]));
+console.log(sumZero([-1, 1, 2, 4]) == [-1, 1]);
