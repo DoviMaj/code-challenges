@@ -3,8 +3,7 @@ https://leetcode.com/explore/challenge/card/july-leetcoding-challenge-2021/608/w
 */
 
 function reshape(mat, r, c) {
-  // Count array total length
-  // for loop inside for loop for Count
+  // Get array total length and build array of all items
   let totalLength = 0;
   let items = [];
   for (let i = 0; i < mat.length; i++) {
