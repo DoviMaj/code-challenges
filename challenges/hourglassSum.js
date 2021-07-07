@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/2d-array/problem
+
 function hourglassSum(arr) {
   let sums = [];
   for (let i = 0; i < 4; i++) {
