@@ -3,11 +3,12 @@ function areThereDuplicates() {
   return new Set(arguments).size !== arguments.length;
 
   // 2.
-  // for (let arg of arguments) {
-  //   if (set.has(arg)) return true;
-  //   set.add(arg);
-  // }
-  // return false;
+  //   let set = new Set();
+  //   for (let arg of arguments) {
+  //     if (set.has(arg)) return true;
+  //     set.add(arg);
+  //   }
+  //   return false;
 
   // 3.
   //   let lookup = {};
