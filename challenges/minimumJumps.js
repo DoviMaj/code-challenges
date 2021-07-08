@@ -9,4 +9,4 @@ function minimumD(X, Y, D) {
   return jumps;
 }
 
-// console.log(minimumD(1, 5, 2));
+console.log(minimumD(1, 5, 2));
