@@ -17,4 +17,5 @@ function sumZero(arr) {
   return undefined;
 }
 
-console.log(sumZero([-1, 1, 2, 4]) == [-1, 1]);
+console.log(sumZero([-1, 1, 2, 4]));
+console.log(sumZero([-3, 0, 1, 2, 3, 4]));
