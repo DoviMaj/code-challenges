@@ -9,7 +9,7 @@ function sameFrequency(a, b) {
     if (!lookup[char]) return false;
     lookup[char]--;
   }
-  return true;
+  return false;
 }
 
 console.log(sameFrequency(22, 222));
